@@ -36,6 +36,19 @@
 // Smooth scroll to Overview
 // -----------------------------
 // Smooth scroll for all header anchors pointing to in-page sections
+// (function(){
+//     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+//     navLinks.forEach(link => {
+//         link.addEventListener('click', (e) => {
+//             const hash = link.getAttribute('href');
+//             const target = document.querySelector(hash);
+//             if (target) {
+//                 e.preventDefault();
+//                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//             }
+//         });
+//     });
+// })();
 (function(){
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
     navLinks.forEach(link => {
